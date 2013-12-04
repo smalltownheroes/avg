@@ -1,0 +1,30 @@
+{
+  "name": "avg",
+  "version": "0.0.1",
+  "description": "calculate rounded averages",
+  "main": "index",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/smalltownheroes/avg.git"
+  },
+  "author": "Ilja Strobbe <ilja@smalltownheroes.be>",
+  "bugs": {
+    "url": "https://github.com/smalltownheroes/avg/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "~0.8.0"
+  },
+  "keywords": [
+    "averages",
+    "rounding"
+  ],
+  "dependencies": {
+    "underscore": "~1.5.2"
+  }
+}
