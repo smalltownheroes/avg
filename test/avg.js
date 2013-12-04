@@ -2,7 +2,7 @@ global.assert = require("chai").assert;
 global.expect = require("chai").expect;
 
 //normal rounding would result in a rounded sum of 99
-fieldValues = { 0: 23094, 1: 38746, 2: 52367, 3: 9889, 4: 83745, 5: 973645 }
+var fieldValues = { 0: 23094, 1: 38746, 2: 52367, 3: 9889, 4: 83745, 5: 973645 }
 
 describe('Averages', function(){
   describe('rounding', function(){
