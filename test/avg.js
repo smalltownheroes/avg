@@ -17,4 +17,12 @@ describe('Averages', function(){
     	expect(sum).to.equal(100)
     })
   })
+  describe('0 field values', function(){
+    var Averages = require('../lib/avg');
+    var averages = new Averages({"a": 0, "b": 0, "c": 0});
+    roundedAverages = averages.calculate();
+    expect(roundedAverages).to.have.property('a').that.eql(0);
+    expect(roundedAverages).to.have.property('b').that.eql(0)
+    expect(roundedAverages).to.have.property('c').that.eql(0)
+  })
 })
