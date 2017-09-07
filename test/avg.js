@@ -14,7 +14,7 @@ describe('Averages', () => {
 		for(let key in roundedAverages){
 			sum += roundedAverages[key];
 		}
-		expect(sum).to.equal(100)
+		expect(sum).to.equal(100);
 	});
 
 	it('0 field values', function(){
@@ -23,6 +23,12 @@ describe('Averages', () => {
 		expect(roundedAverages).to.have.property('a').that.eql(0);
 		expect(roundedAverages).to.have.property('b').that.eql(0)
 		expect(roundedAverages).to.have.property('c').that.eql(0)
+	});
+
+	it('simple percentage', function(){
+		const averages = new Averages();
+		const roundedAverages = averages.calculate({"a": 33, "b": 20, "c": 50});
+		expect(roundedAverages).to.eql({ a: 32, b: 19, c: 49 });
 	});
 
 });
