@@ -1,1 +1,1 @@
-module.exports = require('./lib/avg');
+module.exports = require('./dist');
