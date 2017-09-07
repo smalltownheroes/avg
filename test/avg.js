@@ -7,16 +7,14 @@ const fieldValues = { 0: 23094, 1: 38746, 2: 52367, 3: 9889, 4: 83745, 5: 973645
 
 describe('Averages', () => {
 
-	it('rounds averages', function(){
+	it('rounds averages', () => {
 		const averages = new Averages();
 		const roundedAverages = averages.calculate(fieldValues);
 		let sum = 0;
 		for(let key in roundedAverages){
 			sum += roundedAverages[key];
 		}
-		it('should do rounding so that the rounded sum of all parts is 100%', function(){
-			expect(sum).to.equal(100)
-		});
+		expect(sum).to.equal(100)
 	});
 
 	it('0 field values', function(){
